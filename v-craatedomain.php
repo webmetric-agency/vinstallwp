@@ -4,6 +4,7 @@
 $account=$argv[1];
 $domainvalue=$argv[2];
 $v_hostname = 'PANEL-URL-HERE';
+$v_port = '8083';
 $v_username = 'admin';
 $v_password = 'ADMIN-PASSWORD-HERE';
 $v_returncode = 'yes';
@@ -27,7 +28,7 @@ $postdata = http_build_query($postvars);
 // Send POST query via cURL
 $postdata = http_build_query($postvars);
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://' . $v_hostname . ':8083/api/');
+curl_setopt($curl, CURLOPT_URL, 'https://' . $v_hostname . ':' . $v_port . '/api/');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);

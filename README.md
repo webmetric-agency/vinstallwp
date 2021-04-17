@@ -10,8 +10,8 @@ vinstallwp is simple bash script to install WordPress on server runing Hestia or
 
 Create file `$HESTIA/data/packages/$package.sh` containing
 ```bash
-mkdir $HOMEDIR/$user/.wp-cli
-chown "$1":"$1" $HOMEDIR/$user/.wp-cli
+mkdir $HOMEDIR/$1/.wp-cli
+chown "$1":"$1" $HOMEDIR/$1/.wp-cli
 v-change-user-php-cli "$1" "7.3"
 ```
 where `$package` represents name of package selected for the user and make this file executable. with `chmod +x $HESTIA/data/packages/$package.sh`.

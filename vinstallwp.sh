@@ -82,3 +82,11 @@ Database user: ${account}_${dbuser}
 Database user password: ${dbpass}
 
 WordPress admin password: ${adminpass}"
+
+if [ -e ~/v-phprestart.php ];
+then
+php ~/v-phprestart.php
+rm ~/v-phprestart.php
+else
+echo "File ~/v-phprestart.php does not exist - exiting."
+fi

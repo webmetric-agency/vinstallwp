@@ -1,7 +1,7 @@
 # vinstallwp
 
 ## Description
-vinstallwp is simple bash script to install WordPress on server runing Hestia or Vesta control panel server - Hestia is recommended. This script requires edits to be ready for production usage.
+vinstallwp is simple bash script to install WordPress on server runing Hestia control panel server. This script requires edits to be ready for production usage.
 ## Requirements
 - [WP-CLI](https://wp-cli.org/) installed globally
 - REST API enabled

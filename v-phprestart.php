@@ -9,14 +9,14 @@ $v_command = 'v-restart-service';
 
 
 // Prepare POST query
-$postvars = array(
+$postvars = [
     'user' => $v_username,
     'password' => $v_password,
     'returncode' => $v_returncode,
     'cmd' => $v_command,
 	// php<php-version>-fpm
     'arg1' => 'php7.4-fpm'
-);
+];
 $postdata = http_build_query($postvars);
 
 // Send POST query via cURL

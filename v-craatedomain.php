@@ -15,14 +15,14 @@ $username = $account;
 $domain = $domainvalue;
 
 // Prepare POST query
-$postvars = array(
+$postvars = [
     'user' => $v_username,
     'password' => $v_password,
     'returncode' => $v_returncode,
     'cmd' => $v_command,
     'arg1' => $username,
     'arg2' => $domain
-);
+];
 $postdata = http_build_query($postvars);
 
 // Send POST query via cURL

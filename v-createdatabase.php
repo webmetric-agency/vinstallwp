@@ -19,7 +19,7 @@ $db_user = $argv[3];
 $db_pass = $argv[4];
 
 // Prepare POST query
-$postvars = array(
+$postvars = [
     'user' => $v_username,
     'password' => $v_password,
     'returncode' => $v_returncode,
@@ -28,7 +28,7 @@ $postvars = array(
     'arg2' => $db_name,
     'arg3' => $db_user,
     'arg4' => $db_pass
-);
+];
 $postdata = http_build_query($postvars);
 
 // Send POST query via cURL

@@ -13,7 +13,7 @@ $username=$argv[2];
 $pass=$argv[3];
 
 // New Database
-$username = $konto;
+$username = $account;
 $db_name = $argv[2];
 $db_user = $argv[3];
 $db_pass = $argv[4];
